@@ -1,12 +1,12 @@
-# Midterm project ML Zoomcamp 2022: Prediction of obesity level
+# Midterm project ML Zoomcamp 2023: Prediction of Parkinson disease
 
 ## Description of problem and data
 
-In this project I examined the problem, if you can predict the obestiy level of an individual given its eating habits and pyhsical condition.
+In this project I examined the problem, if you can predict whether someone has parkinson disease.
 
-According to this problem I found a dataset in the UCI Machine Learning Repository. 
-The link is: https://archive-beta.ics.uci.edu/ml/datasets/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition#Abstract.
-You can find the datasat in my github repository also: https://github.com/katrinlaura73/MLZoomcamp/blob/main/MidtermProject/ObesityDataSet_raw_and_data_sinthetic.csv.
+According to this problem I found a dataset in Kaggle. 
+The link is: https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set.
+You can find the datasat in my github repository also: https://github.com/rassel25/zoomcamp/blob/main/parkinsons.data.
 
 In a study the researchers asked the following attributes:
 - Gender
