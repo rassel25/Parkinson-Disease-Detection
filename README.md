@@ -8,32 +8,20 @@ According to this problem I found a dataset in Kaggle.
 The link is: https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set.
 You can find the datasat in my github repository also: https://github.com/rassel25/zoomcamp/blob/main/parkinsons.data.
 
-In a study the researchers asked the following attributes:
-- Gender
-- Age
-- Height
-- Weight
-- Family history of Obesity
-- Frequent consumption of high caloric food (FAVC)
-- Frequency of consumption of vegetables(FCVC)
-- Number of main meals (NCP)
-- Consumption of food between meals (CAEC)
-- Smoking Habits
-- Consumption of water daily (CH20)
-- Consumption of alcohol (CALC)
-- Calories consumption monitoring (SCC)
-- Physical activity frequency (FAF)
-- Time using technology devices (TUE)
-- Transportation used (MTRANS)
+The dataset contains following columns:
+- name - ASCII subject name and recording number
+- MDVP:Fo(Hz) - Average vocal fundamental frequency
+- MDVP:Fhi(Hz) - Maximum vocal fundamental frequency
+- MDVP:Flo(Hz) - Minimum vocal fundamental frequency
+- MDVP:Jitter(%), MDVP:Jitter(Abs), MDVP:RAP, MDVP:PPQ, Jitter:DDP - Several measures of variation in fundamental frequency
+- MDVP:Shimmer,MDVP:Shimmer(dB),Shimmer:APQ3,Shimmer:APQ5,MDVP:APQ,Shimmer:DDA - Several measures of variation in amplitude
+- NHR, HNR - Two measures of the ratio of noise to tonal components in the voice
+- status - The health status of the subject (one) - Parkinson's, (zero) - healthy
+- RPDE, D2 - Two nonlinear dynamical complexity measures
+- DFA - Signal fractal scaling exponent
+- spread1,spread2,PPE - Three nonlinear measures of fundamental frequency variation
 
-They calculated the obesity level from weight and height. The measure is called BMI and is calculated by BMI =  weight / height^2. 
-The calculation resulted in the following obesity levels:
-- Underweight Less than 18.5
-- Normal 18.5 to 24.9
-- Overweight (I and II) 25.0 to 29.9
-- Obesity I 30.0 to 34.9
-- Obesity II 35.0 to 39.9
-- Obesity III Higher than 40.
+The target variable is Status which contains values: 0(healthy) and 1(parkinson disease)
 
 ## Description of project
 
