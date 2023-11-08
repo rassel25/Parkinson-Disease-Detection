@@ -1,14 +1,14 @@
-# Midterm project ML Zoomcamp 2023: Prediction of Parkinson disease
+# Midterm project ML Zoomcamp 2023: Prediction of Parkinson's disease
 
 ## Description of problem and data
 
-In this project I examined the problem, if you can predict whether someone has parkinson disease.
+In this project, I examined the problem of whether someone has Parkinson's disease.
 
-According to this problem I found a dataset in Kaggle. 
-The link is: https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set.
-You can find the datasat in my github repository also: https://github.com/rassel25/zoomcamp/blob/main/parkinsons.data.
+According to this problem, I found a dataset on Kaggle.
+The link for the dataset: https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set.
+You can find the dataset in my GitHub repository also: https://github.com/rassel25/zoomcamp/blob/main/parkinsons.data.
 
-The dataset contains following columns:
+The dataset contains the following columns:
 - name - ASCII subject name and recording number
 - MDVP:Fo(Hz) - Average vocal fundamental frequency
 - MDVP:Fhi(Hz) - Maximum vocal fundamental frequency
@@ -25,21 +25,18 @@ The target variable is Status which contains values: 0(healthy) and 1(parkinson 
 
 ## Description of project
 
-In the project I first cleaned the data.
+In the project, I first cleaned the data by doing EXPLORATORY DATA ANALYSIS AND DATA PREPROCESSING.
 
-Then I tested different classification methods: 
-- Multiclass LogisticRegression
-- Random Forest Decision Tree
-- Gradient Boost
+Then I used FEATURE SELECTION techniques to get the top 5 best features. In the end, I used all the features to train our model as this gives the best performance.
 
-I searched the best parameters for the models and compared them. For comparison I used the metric AUC.
+After that, I used PIPELINE to do FEATURE SCALING & OVERSAMPLING.
 
-The best model turned out to be Random Forest with the parameters n_estimators=140, max_depth=15 and min_samples_leaf=1.
+Lastly, I used GRIDSEARCH CV for MODEL SELECTION, HYPERPARAMETERS TUNING.
 
 ## Description of files in Github Repository
 
 
-- Data: ObesityDataSet_raw_and_data_sinthetic.csv
+- Data: 
 
 - Jupyter Notebook: notebook.ipynb with
   - Data preparation and data clearning
