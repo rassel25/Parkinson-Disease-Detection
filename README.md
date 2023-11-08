@@ -33,8 +33,15 @@ After that, I used PIPELINE to do FEATURE SCALING & OVERSAMPLING.
 
 Lastly, I used GRIDSEARCH CV for MODEL SELECTION, HYPERPARAMETERS TUNING.
 
-## Description of files in Github Repository
+I have used 5 models to train the model: Support Vector Classifier, kNN Classifier, Gaussian Naive Bayes, Decision Tree Classifier, Random Forest Classifier.
 
+The best model with its Hyperparameters: SVC(C=10, kernel='poly')
+
+The ROC_AUC score, precision score, recall score, and f1-score for the training set are: 0.92, 0.96, 0.92, and 0.94.
+
+The ROC_AUC score, precision score, recall score, and f1-score for the testing set are: 0.87, 0.87, 0.87, and 0.87.
+
+## Description of files in Github Repository
 
 - Data: parkinsons.data
 
@@ -59,44 +66,17 @@ Lastly, I used GRIDSEARCH CV for MODEL SELECTION, HYPERPARAMETERS TUNING.
 
 - Deployment: Used AWS Beanstalk to deploy the dockerized file
 
-- ![image](https://github.com/rassel25/zoomcamp/assets/36706178/64c06411-f534-4507-a425-5360d99398ab)
+  ![image](https://github.com/rassel25/zoomcamp/assets/36706178/64c06411-f534-4507-a425-5360d99398ab)
 
 
 ## Description of how to use the model
 
-Build the docker image: docker build -t obesity:latest .
+Build the docker image:  docker build -t parkinson-disease . 
 
-Run the docker image: docker run -it -p 9696:9696 obesity:latest 
+Run the docker image: docker run -it --rm -p 9696:9696 parkinson-disease   
 
-Test the docker impage: python test_predict.py
+Test the docker image: python predict_test.py
 
-If you want to test another individual than given in test_predict use the following structure: 
+Deployed Url: http://parkinson-disease-env.eba-7ddpgguy.eu-west-1.elasticbeanstalk.com/
 
-individual = {'gender': 'male' or 'female',
-
-                'family_history_with_overweight': 'yes' or 'no',
-                
-                'consumption_high_caloric_food': 'yes' or 'no',
-                
-                'consumption_between_meals': 'sometimes', 'frequently', 'always'or 'no',
-                
-                'smoke': 'yes' or 'no',
-                
-                'calories_consumption_monitoring': 'yes' or 'no',
-                
-                'consumption_alcohol': 'sometimes', 'frequently' or 'no',
-                
-                'transportation_used': 'automotive', 'public_transportation' or 'walk_or_bike',
-                
-                'age': a number of the age, must not be integer (note that the research only covered ages to 50, prediciton for ages above 50 might be incorrect),
-                
-                'consumption_vegetables': number of how often a day vegetabels are consumped in average,
-                
-                'number_meals': number of meals a day in average ,
-                
-                'consumption_water': number of liters of water to drink on a day in average,
-               
-               'physical_activity': frequence of pysical activity on a day in average,
-               
-               'time_techn_devices': time spend with technical devices on a day in average}
 
