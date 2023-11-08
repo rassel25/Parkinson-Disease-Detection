@@ -39,7 +39,7 @@ Lastly, I used GRIDSEARCH CV for MODEL SELECTION, HYPERPARAMETERS TUNING.
 - Data: parkinsons.data
 
 - Jupyter Notebook: notebook.ipynb with
-  - Data preparation and data clearning
+  - Data preparation and data cleaning
   - EDA, feature importance analysis
   - Model selection process and parameter tuning
 
@@ -57,7 +57,10 @@ Lastly, I used GRIDSEARCH CV for MODEL SELECTION, HYPERPARAMETERS TUNING.
 
 - test_predict.py: to test the docker file
 
-- Deployment: Used AWS Beanstalk to deploy the dockerized file 
+- Deployment: Used AWS Beanstalk to deploy the dockerized file
+
+- ![image](https://github.com/rassel25/zoomcamp/assets/36706178/64c06411-f534-4507-a425-5360d99398ab)
+
 
 ## Description of how to use the model
 
