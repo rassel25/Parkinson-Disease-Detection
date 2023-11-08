@@ -36,7 +36,7 @@ Lastly, I used GRIDSEARCH CV for MODEL SELECTION, HYPERPARAMETERS TUNING.
 ## Description of files in Github Repository
 
 
-- Data: 
+- Data: parkinsons.data
 
 - Jupyter Notebook: notebook.ipynb with
   - Data preparation and data clearning
@@ -45,19 +45,21 @@ Lastly, I used GRIDSEARCH CV for MODEL SELECTION, HYPERPARAMETERS TUNING.
 
 - Script: train.py - in here the final model is build
 
-- model bin: The final model and Dict Vecotrizer are saved by pickle to model.boin 
+- model.bin: The final model with its pipeline and parameters are saved by pickle to model.boin 
 
 - predict.py. contains
   - Loading the model
-  - Serving it via a web service via flask
+  - Serving it via flask web service
 
-- Pipenv and Pipenv.lock: to build a evironment via Pipenv
+- Files with dependencies: Pipfile and Pipfile.lock to build an environment via Pipenv
 
 - Dockerfile: for running the service
 
-- test_predict.py: to test the dockerfilde
+- test_predict.py: to test the docker file
 
-## Description on how to use the model
+- Deployment: Used AWS Beanstalk to deploy the dockerized file 
+
+## Description of how to use the model
 
 Build the docker image: docker build -t obesity:latest .
 
