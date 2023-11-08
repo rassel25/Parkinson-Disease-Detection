@@ -1,4 +1,4 @@
-# Midterm project ML Zoomcamp 2023: Prediction of Parkinson's disease
+# Midterm project ML Zoomcamp 2023: Parkinson Disease Detection
 
 ## Description of problem and data
 
