@@ -68,7 +68,7 @@ The ROC_AUC score, precision score, recall score, and f1-score for the testing s
 
 ## Description of how to use the model
 
-# Docker
+## Docker
 
 - isoloate the environment from the host machine
 - You can find docker image here https://hub.docker.com/_/python
@@ -78,7 +78,7 @@ The ROC_AUC score, precision score, recall score, and f1-score for the testing s
 - Run the docker image: docker run -it --rm -p 9696:9696 parkinson-disease   
 - Test the docker image: python predict_test.py
 
-# Deploy to AWS Elastic Beanstalk
+## Deploy to AWS Elastic Beanstalk
 
 - create an aws account
 - install eb cli as dev dependency pipenv install awsebcli --dev
@@ -94,4 +94,3 @@ The ROC_AUC score, precision score, recall score, and f1-score for the testing s
 https://github.com/rassel25/Parkinson-Disease-Detection/assets/36706178/a2af4c50-b13d-4c1f-9b90-1b960a576de3
 
 I have terminated this service to avoid generating extra fees.
-
