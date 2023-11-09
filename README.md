@@ -66,17 +66,32 @@ The ROC_AUC score, precision score, recall score, and f1-score for the testing s
 
 - Deployment: Used AWS Beanstalk to deploy the dockerized file
 
-  ![image](https://github.com/rassel25/zoomcamp/assets/36706178/64c06411-f534-4507-a425-5360d99398ab)
-
-
 ## Description of how to use the model
 
-Build the docker image:  docker build -t parkinson-disease . 
+# Docker
 
-Run the docker image: docker run -it --rm -p 9696:9696 parkinson-disease   
+- isoloate the environment from the host machine
+- You can find docker image here https://hub.docker.com/_/python
+- I have chosen python:3.10 to match my python version
+- Build the docker image:  docker build -t parkinson-disease . 
+- I have chosen python:3.10 to match my python version
+- Run the docker image: docker run -it --rm -p 9696:9696 parkinson-disease   
+- Test the docker image: python predict_test.py
 
-Test the docker image: python predict_test.py
+# Deploy to AWS Elastic Beanstalk
 
-Deployed Url: http://parkinson-disease-env.eba-7ddpgguy.eu-west-1.elasticbeanstalk.com/
+- create an aws account
+- install eb cli as dev dependency pipenv install awsebcli --dev
+- go to virtual environment pipenv shell
+- initial the eb init -p "Docker running on 64bit Amazon Linux 2" parkinson-disease
+- ls -a to check whether there is .elasticbeanstalk folder
+- ls .elasticbeanstalk/ to check the doc inside the folder config.yml
+- run locally to test eb local run --port 9696
+- in another terminal run python predict_test.py to test
+- implement in the cloud: create a cloud environment -> eb create parkinson-disease-env
+- copy the service link to predict_test.py, update our url
 
+https://github.com/rassel25/Parkinson-Disease-Detection/assets/36706178/a2af4c50-b13d-4c1f-9b90-1b960a576de3
+
+I have terminated this service to avoid generating extra fees.
 
