@@ -90,7 +90,7 @@ The ROC_AUC score, precision score, recall score, and f1-score for the testing s
 - in another terminal run python predict_test.py to test
 - implement in the cloud: create a cloud environment -> eb create parkinson-disease-env
 - copy the service link to predict_test.py, update our url
+  
+![aws](https://github.com/rassel25/Parkinson-Disease-Detection/assets/36706178/aa21508a-65ce-490f-ada8-f3f91e966093)
 
-https://github.com/rassel25/Parkinson-Disease-Detection/assets/36706178/a2af4c50-b13d-4c1f-9b90-1b960a576de3
-
-I have terminated this service to avoid generating extra fees.
+I have terminated AWS Beanstalk service to avoid generating extra fees.
